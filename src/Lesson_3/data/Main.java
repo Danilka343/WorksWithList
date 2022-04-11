@@ -21,9 +21,6 @@ public class Main {
         ThirdTask thirdTask = new ThirdTask();
         thirdTask.task3();
 
-        ///
-        System.out.println("");
-
         System.out.println("\nFOURTH TASK\n");
         FourthTask fourthTask = new FourthTask();
         fourthTask.task4();
