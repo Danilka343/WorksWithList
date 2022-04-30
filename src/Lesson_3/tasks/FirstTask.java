@@ -13,14 +13,14 @@ public class FirstTask implements RandomOfNameAndAuthor {
         List<Book> linkedBook = new LinkedList<>();
 
         for (int i = 1; i <= 20; i++) {                 //20 Lists with random BookNames and Authors
-            linkedBook.add(new Book(i, getRandomOfBookName(), getRandomOfAuthor(), "Danil"));
+            linkedBook.add(new Book(i, getRandomOfBookName(), getRandomOfName(), "Danil"));
         }
 
         System.out.println("Until element 7 is removed");
         linkedBook.forEach(b -> System.out.println(
                 b.getId() +
                         " BookName - " + b.getRandomOfBookName() +
-                        " ,Author - " + b.getRandomOfAuthor() +
+                        " ,Author - " + b.getRandomOfName() +
                         " ,Publisher -  " + b.getPublisher()));
 
         linkedBook.remove(7);   //remove element from index 7
@@ -28,7 +28,7 @@ public class FirstTask implements RandomOfNameAndAuthor {
         linkedBook.forEach(b -> System.out.println(
                 b.getId() +
                         " BookName - " + b.getRandomOfBookName() +
-                        " ,Author - " + b.getRandomOfAuthor() +
+                        " ,Author - " + b.getRandomOfName() +
                         " ,Publisher -  " + b.getPublisher()));
     }
 
@@ -39,7 +39,7 @@ public class FirstTask implements RandomOfNameAndAuthor {
     }
 
     @Override
-    public String getRandomOfAuthor() {
+    public String getRandomOfName() {
         return null;
     }
 

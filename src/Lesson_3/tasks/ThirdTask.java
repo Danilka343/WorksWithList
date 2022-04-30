@@ -35,7 +35,8 @@ public class ThirdTask implements Comparator<Book> {
         System.out.println("\n----------------------------------------------\n");
 
         System.out.println("Sort by Author!!!\n");
-        Collections.sort(linkedBook, new SortByAuthor()); //Sorting Collecion by Author
+        Collections.sort(linkedBook,
+                new SortByAuthor()); //Sorting Collecion by Author
         linkedBook.forEach(b -> System.out.println(
                 b.getId() +
                         " BookName - " + b.getName() +

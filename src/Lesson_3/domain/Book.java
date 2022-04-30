@@ -94,7 +94,7 @@ public class Book implements RandomOfNameAndAuthor {
     }
 
     @Override
-    public String getRandomOfAuthor() {
+    public String getRandomOfName() {
         String[] author = {"Danil", "Alexei", "Nikita", "Slava", "Pushkin", "Lebedev", "Andrei"};
         int a = (int) Math.floor(Math.random() * author.length);
         return author[a];
